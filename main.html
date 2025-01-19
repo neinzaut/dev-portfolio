@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="styles.css">
+        <title>ches tuazon | portfolio</title>
+        <link rel="icon" href="/assets/portrait-resized.png" type="image/png">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jacquard+24&family=Jacquarda+Bastarda+9&family=Jersey+10&family=Micro+5&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">    </head>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <img src="/assets/small-logo.png" alt="Site Icon" class="nav-logo">
+    <div class="nav-links-container">
+        <a href="#home" class="nav-links">Home</a>
+        <a href="#about" class="nav-links">About</a>
+        <a href="#projects" class="nav-links">Projects</a>
+        <a href="https://github.com/neinzaut" class="nav-links">GitHub</a>
+    </div>
+</nav>
+
+<body>
+    <!-- HOME SECTION -->
+    <section id="home">
+        <div class="home-container" style="display: flex;">
+            <div class="text-column" style="flex: 1;">
+                <h2>hello, world!</h2>
+                <div class="name-container">
+                    <div class="text-1">
+                        <h1>i'm</h1>
+                    </div>
+                    <div class="text-2">
+                        <h1 class="change-text">ches tuazon</h1>
+                    </div>
+                </div>
+                <h3>a creative developer who aims to create captivating designs through meaningful user experiences</h3>
+                <button class="btn-primary"> Download Resume </button>
+                <button class="btn-primary"> Contact Me </button>
+            </div>
+            <div class="image-column" style="flex: 1;">
+                <img src="/assets/profile.png" alt="">
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+
+
+    <div class="about-img-container" style="display: flex;">
+        <div class="abt-text-column" style="flex: 1.5;">
+            <h1>what i can do</h1>
+            <h3>As a third-year BS Computer Science student specializing in Intelligent Systems at De La Salle University - Dasmarinas, I possess a diverse skillset encompassing branding, illustration, UI/UX design, prototyping, and coding. I have led the frontend development for my thesis projects, Talk2DHand and DocuMed, providing valuable experience in translating design concepts into functional interfaces.<br><br>My experience as a graphic designer, gained through organizational involvement and internships, has sharpened my branding and illustration skills, further refining my attention to detail. I have led numerous projects as a UI/UX lead for competitions and courseworks, making me adept at collaborating effectively within cross-functional teams and possess a strong understanding of user-centered design principles.</h3>
+            
+            <div class="slider" style="
+            --width: 50px;
+            --height: 50px;
+            --quantity: 18;">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="assets/skill-1.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="assets/skill-2.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="assets/skill-3.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="assets/skill-4.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="assets/skill-5.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="assets/skill-6.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="assets/skill-7.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="assets/skill-8.png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="assets/skill-9.png" alt=""></div>
+                <div class="item" style="--position: 10"><img src="assets/skill-10.png" alt=""></div>
+                <div class="item" style="--position: 11"><img src="assets/skill-11.png" alt=""></div>
+                <div class="item" style="--position: 12"><img src="assets/skill-12.png" alt=""></div>
+                <div class="item" style="--position: 13"><img src="assets/skill-13.png" alt=""></div>
+                <div class="item" style="--position: 14"><img src="assets/skill-14.png" alt=""></div>
+                <div class="item" style="--position: 15"><img src="assets/skill-15.png" alt=""></div>
+                <div class="item" style="--position: 16"><img src="assets/skill-16.png" alt=""></div>
+                <div class="item" style="--position: 17"><img src="assets/skill-17.png" alt=""></div>
+                <div class="item" style="--position: 18"><img src="assets/skill-18.png" alt=""></div>
+                <!-- <div class="item" style="--position: 19"><img src="assets/skill-5.png" alt=""></div>
+                <div class="item" style="--position: 20"><img src="assets/skill-6.png" alt=""></div> -->
+            </div>
+        </div>
+
+        </div>
+        <div class="abt-image-column" style="flex: 1; position: relative; animation: float 7s ease-in-out infinite;">
+            <img src="/assets/1.png" class="object" data-value="-2" alt="" style="position: absolute; top: 0; left: 0;">
+            <img src="/assets/2.png" class="object" data-value="6" alt="" style="position: absolute; top: 0; left: 0;">
+            <img src="/assets/3.png" class="object" data-value="-4" alt="" style="position: absolute; top: 0; left: 0;">
+            <img src="/assets/4.png" class="object" data-value="6" alt="" style="position: absolute; top: 0; left: 0;">
+            <img src="/assets/5.png" class="object" data-value="-1" alt="" style="position: absolute; top: 0; left: 0;">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+          document.querySelectorAll(".object").forEach(function(move){
+    
+            var moving_value = move.getAttribute("data-value");
+            var x = (e.clientX * moving_value) / 250;
+            var y = (e.clientY * moving_value) / 250;
+    
+            move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+          });
+        }
+        </script>
+
+
+        <!-- <div class="timeline">
+            <div class="timeline-tailwind">
+                <ol class="relative border-l border-gray-200 dark:border-gray-700">
+                    <li class="mb-10 ml-6 flex items-start">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <div class="ml-4">
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2024 - September 2024</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">UI/UX Design Intern</h3>
+                            <p class="mb-4 text-base font-italic text-gray-700 dark:text-gray-400">Symph</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400"> Created wireframes and prototypes via Figma for proposals with the company's internal and external partners.</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400"> Assisted the marketing team with the creation of publication materials using Canva and Figma.</p>
+                        </div>
+                    </li>
+                    <li class="mb-10 ml-6 flex items-start">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <div class="ml-4">
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2024 - October 2024</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Digital Experience Virtual Apprentice</h3>
+                            <p class="mb-4 text-base font-italic text-gray-700 dark:text-gray-400">KadaKareer</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Conducted a heuristic evaluation of Hati Health's website using <b>Jakob's 10 Usability Heuristics</b>.</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Conducted market research, created user personas, and made a user flow based on the surveyed results.</p>
+                        </div>
+                    </li>
+                    <li class="mb-10 ml-6 flex items-start">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <div class="ml-4">
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 2024 - July 2024</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">IT Intern</h3>
+                            <p class="mb-4 text-base font-italic text-gray-700 dark:text-gray-400">Knowles Training Institute - The Umonics Method</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Assigned to the monitoring team as a co-lead; oversaw progress of all IT interns in attendance and departmental tasks.</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Wrote scripts that are actively being used in the intern database; also utilized macros for sorting data.</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Was in charge of domain maintenance for websites created by the company.</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Created websites via WordPress and hosted it via XAMPP.</p>
+                        </div>
+                    </li>
+                    <li class="mb-10 ml-6 flex items-start">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <div class="ml-4">
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2023 - Jul 2024</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">UI/UX Virtual Apprentice</h3>
+                            <p class="mb-4 text-base font-italic text-gray-700 dark:text-gray-400">KadaKareer</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Joined two challenges with collaborations between MedGrocer and Move In Colour respectively.</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Created a comprehensive brand identity elements library, high-fidelity wireframes, and prototypes via Figma for the proposed website designs of both companies.</p>
+                            <p class="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">Created a six-page functional website via Wix for Move in Colour; won <b>Kollab's Choice Award</b></p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project cards will be added here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
