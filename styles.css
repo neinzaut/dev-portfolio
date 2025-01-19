@@ -1,13 +1,3 @@
-/* <uniquifier>: Use a unique and descriptive class name */
-/* <weight>: Use a value from 300 to 900 */
-
-.figtree-<uniquifier> {
-  font-family: "Figtree", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 body {
     font-family: "Figtree", serif !important;
     background-image: url('/assets/bg-1.png'), url('assets/bg-2.png');
@@ -15,6 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
+    cursor: url("/assets/cursor.png"), auto;
 }
 
 
@@ -57,7 +48,7 @@ body {
 }
 
 .nav-links:hover {
-    color: #4c4e4f;
+    color: #727272;
 }
 /* - END NAVBAR - */
 
@@ -228,19 +219,186 @@ body {
 
 
 /* - PROJECTS SECTION - */
+#projects {
+    height: 80vh; 
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+#projects h1 {
+    font-size: 6vh;
+    padding-left: 8vh;
+}
+#projects h2 {
+    font-size: 4vh;
+    /* font-weight: 500; */
+}
+#projects h3 {
+    font-size: 2.5vh;
+}
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+.tags {
+    outline: #000;
+    border-radius: 8px;
+    display: flex; /* Ensure labels are displayed in a row */
+    gap: 5px; /* Space between labels */
+    /* padding: 5px; Add some padding around the labels */
+}
+
+.tags label {
+    /* border: 1px solid #000; Black outline for each label */
+    border-radius: 10px; /* Rounded corners for each label */
+    padding: 3px 8px; /* Padding inside each label */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.topic-lb {
+    /* background: linear-gradient(to right, #ffbca8, #e15f37); */
+    background: linear-gradient(to right, #7acaff, #1182ce);
+    color: white;
+}
+
+.lang-lb {
+    background: linear-gradient(to right, #80ff77, #00c52e);
+    color: white;
+}
+
+.fw-lb {
+    background: linear-gradient(to right, #ffcc55, #eba500);
+    color: white;
+}
+
+.sw-lb {
+    background: linear-gradient(to right, #B2B6FF, #7E63EB);
+    color: white;
+}
+
+.button-project {
+    /* border: 1px solid #000; Black outline for each label */
+    /* border-radius: 10px; Rounded corners for each label */
+    padding: 5px 0px; /* Padding inside each label */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #969696;
+    font-weight: 600;
+}
+.button-project:hover {
+    color: #3e3e3e;
+    transition: color 0.3s ease-in-out;
+}
+
 
 .project-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
-    width: calc(33% - 20px); /* Three cards per row */
+    /* width: calc(33% - 20px); Three cards per row */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-asset {
+    display: none;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    /* --- HOME --- */
+    .home-container {
+        flex-direction: column;
+    }
+    .image-column {
+        display: none; /* Hide the image on mobile */
+    }
+    #home h1 {
+        font-size: 5vh; /* Adjust heading size */
+    }
+    #home h2 {
+        font-size: 5vh; /* Adjust heading size */
+    }
+    #home h3 {
+        font-size: 2.5vh; /* Adjust heading size */
+    }
+    .text-column {
+        padding: 3vh;
+        margin-top: 5vh;
+    }
+    .profile-asset { 
+        display: inline;
+    }
+    .btn-primary {
+        align-self: center;
+    }
+    .profile-asset {
+        position: relative;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    /* --- ABOUT --- */
+    .about-img-container {
+        flex-direction: column;
+    }
+    .abt-text-column{
+        padding: 3vh;
+    }
+    .abt-image-column{
+        display: none;
+    }
+    #about h1 {
+        font-size: 5vh; /* Adjust heading size */
+    }
+    #about h2 {
+        font-size: 5vh; /* Adjust heading size */
+    }
+    #about h3 {
+        font-size: 2.5vh; /* Adjust heading size */
+    }
+    .slider {
+        margin-top: 4vh;
+    }
+
+
+    /* --- PROJECT --- */
+    #projects h1 {
+        font-size: 5vh; /* Adjust heading size */
+        padding: 3vh;
+    }
+    .button-project {
+        padding: 10px; /* Increase padding for better touch targets */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        padding: 3vh;
+    }
+
+    .nav-links-container {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Reduce gap between links */
+    }
+    .project-card {
+        max-width: 100%;
+    }
+
+    .tags {
+        display: block;
+    }
+
 }
 
 /* - END STYLES - */
