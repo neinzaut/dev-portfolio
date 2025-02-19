@@ -419,18 +419,18 @@ body {
     }
     #home h1 {
         /* font-size: 5vh;  */
-        font-size: 45px;
+        font-size: 40px;
         text-align: center;
         font-weight: 400;
     }
     #home h2 {
         /* font-size: 5vh; */
-        font-size: 45px;
+        font-size: 40px;
         text-align: center;
         font-weight: 400;
     }
     #home h3 {
-        font-size: 24px; /* Adjust heading size */
+        font-size: 18px; /* Adjust heading size */
         text-align: center;
         padding-left: 2vh;
         padding-right: 2vh;
@@ -456,6 +456,7 @@ body {
         align-self: center;
         margin-top: 1.5vh !important;
         font-size: 18px;
+        padding: 5px;
     }
 
     /* --- ABOUT --- */
@@ -474,12 +475,12 @@ body {
     }
     #about h1 {
         /* font-size: 5vh; */
-        font-size: 45px;
+        font-size: 40px;
         padding-left: 3vh;
     }
     #about h2 {
         /* font-size: 5vh; */
-        font-size: 45px;
+        font-size: 40px;
         padding-left: 3vh;
 
     }
@@ -504,11 +505,11 @@ body {
     }
 
     #projects h1 {
-        font-size: 45px !important;
+        font-size: 40px !important;
         padding-top: 2vh;
     }
     #projects h2 {
-        font-size: 35px !important;
+        font-size: 30px !important;
         padding-left: 0;
     }
     #projects p {
@@ -516,8 +517,8 @@ body {
     }
 
     .button-project {
-        padding: 10px; /* Increase padding for better touch targets */
-        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 5px; 
+        font-size: 18px;
     }
 
     .projects-container {
@@ -530,8 +531,8 @@ body {
     }
 
     .nav-links-container {
-        flex-direction: column; /* Stack navigation links vertically */
-        gap: 10px; /* Reduce gap between links */
+        flex-direction: column; 
+        gap: 10px; 
     }
     .project-card {
         width: 100%;
