@@ -15,12 +15,12 @@
     <nav class="navbar">
         <img src="/assets/small-logo.png" alt="Site Icon" class="nav-logo">
         <div class="nav-links-container">
-            <a href="#home" class="nav-links">Home</a>
-            <a href="#about" class="nav-links">About</a>
-            <a href="#projects" class="nav-links">Projects</a>
+            <a href="/index.html#home" class="nav-links">Home</a>
+            <a href="/index.html#about" class="nav-links">About</a>
+            <a href="/index.html#projects" class="nav-links">Projects</a>
             <a href="https://github.com/neinzaut" class="nav-links">GitHub</a>
         </div>
-<div class="hamburger">
+        <div class="hamburger">
             <div></div>
             <div></div>
             <div></div>
@@ -89,12 +89,20 @@
     </div>
     
 <script>
-        const hamburger = document.querySelector('.navbar .hamburger');
-        const navLinksContainer = document.querySelector('.navbar .nav-links-container');
-    
-hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinksContainer.classList.toggle('active');
-        });
+    const hamburger = document.querySelector('.hamburger');
+    const navLinksContainer = document.querySelector('.nav-links-container');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinksContainer.classList.toggle('active');
+    });
+
+    // Optional: Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navLinksContainer.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navLinksContainer.classList.remove('active');
+        }
+    });
     </script>
 </html>
