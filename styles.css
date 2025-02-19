@@ -476,18 +476,18 @@ body {
     #about h1 {
         /* font-size: 5vh; */
         font-size: 40px;
-        padding-left: 3vh;
+        padding-left: 1.5vh;
     }
     #about h2 {
         /* font-size: 5vh; */
         font-size: 40px;
-        padding-left: 3vh;
+        padding-left: 1.5vh;
 
     }
     #about h3 {
         font-size: 18px !important; 
-        padding-left: 3vh;
-        padding-right: 3vh;
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
     }
     #about p {
         font-size: 18px;
@@ -500,13 +500,14 @@ body {
     /* --- PROJECT --- */
     #projects {
         margin-top: 5vh;
-        padding-left: 3vh;
-        padding-right: 3vh;
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
     }
 
     #projects h1 {
         font-size: 40px !important;
         padding-top: 2vh;
+        padding-left: 3vh !important;
     }
     #projects h2 {
         font-size: 30px !important;
@@ -525,7 +526,9 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
-        padding: 3vh;
+        padding-left: 3vh;
+        padding-right: 3vh;
+        padding-bottom: 3vh;
         width: 100%;
         max-width: 100%;
     }
