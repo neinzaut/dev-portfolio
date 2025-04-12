@@ -54,193 +54,329 @@
 
     <!-- ABOUT SECTION -->
     <section id="about">
+        <h1>technologies</h1>
+        <div class="tech-container">
+            <div class="dark:border-gray-700">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400 justify-center">
+            <li class="me-2">
+            <a href="#" class="tab inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" data-content="frontend">
+                <img src="/assets/tag-frontend.png" class="w-4 h-4 me-2 grayscale contrast-0 brightness-0 group-hover:filter-none mr-2" aria-hidden="true">
+                frontend
+            </a>
+            </li>
+            <li class="me-2">
+            <a href="#" class="tab inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" data-content="backend">
+                <img src="/assets/tag-backend.png" class="w-4 h-4 me-2 filter grayscale contrast-0 brightness-0 group-hover:filter-none mr-2" aria-hidden="true">
+                backend
+            </a>
+            </li>
+            <li class="me-2">
+            <a href="#" class="tab inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" data-content="others">
+                <img src="/assets/tag-others.png" class="w-4 h-4 me-2 filter grayscale contrast-0 brightness-0 group-hover:filter-none mr-2" aria-hidden="true">
+                others
+            </a>
+            </li>
+            </ul>
+            <div id="tab-content" class="mt-4 text-gray-700 dark:text-gray-300 text-center">
+                <div class="tab-content-container flex flex-wrap gap-4" data-tab="frontend">
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-2.png" alt="HTML" onmouseover="showTooltip(event, 'HTML')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">HTML</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-1.png" alt="CSS" onmouseover="showTooltip(event, 'CSS')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">CSS</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-3.png" alt="JavaScript" onmouseover="showTooltip(event, 'JavaScript')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">JavaScript</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-19.png" alt="React Native" onmouseover="showTooltip(event, 'React Native')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">React Native</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-14.png" alt="TailwindCSS" onmouseover="showTooltip(event, 'TailwindCSS')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">TailwindCSS</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-15.png" alt="Bootstrap" onmouseover="showTooltip(event, 'Bootstrap')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Bootstrap</div>
+                    </div>
+                </div>
+                <div class="tab-content-container flex flex-wrap gap-4 hidden" data-tab="backend">
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-4.png" alt="Java" onmouseover="showTooltip(event, 'Java')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Java</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-5.png" alt="Python" onmouseover="showTooltip(event, 'Python')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Python</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-16.png" alt="mySQL" onmouseover="showTooltip(event, 'mySQL')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">mySQL</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-20.png" alt="Flask" onmouseover="showTooltip(event, 'Flask')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Flask</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-21.png" alt="Firebase" onmouseover="showTooltip(event, 'Firebase')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Firebase</div>
+                    </div>
+                </div>
+                <div class="tab-content-container flex flex-wrap gap-4 hidden" data-tab="others">
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-6.png" alt="Git" onmouseover="showTooltip(event, 'Git')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Git</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-12.png" alt="Visual Studio Code" onmouseover="showTooltip(event, 'Visual Studio Code')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Visual Studio Code</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-22.png" alt="Google Colab" onmouseover="showTooltip(event, 'Google Colab')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Google Colab</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-18.png" alt="WordPress" onmouseover="showTooltip(event, 'WordPress')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">WordPress</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-13.png" alt="Framer" onmouseover="showTooltip(event, 'Framer')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Framer</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-7.png" alt="Figma" onmouseover="showTooltip(event, 'Figma')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Figma</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-8.png" alt="FireAlpaca" onmouseover="showTooltip(event, 'FireAlpaca')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">FireAlpaca</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-9.png" alt="Adobe Illustrator" onmouseover="showTooltip(event, 'Adobe Illustrator')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Adobe Illustrator</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-10.png" alt="Adobe Photoshop" onmouseover="showTooltip(event, 'Adobe Photoshop')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Adobe Photoshop</div>
+                    </div>
+                    <div class="item" style="position: relative;">
+                        <img src="assets/skill-11.png" alt="Canva" onmouseover="showTooltip(event, 'Canva')" onmouseout="hideTooltip()">
+                        <div class="tooltip" style="display: none; position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 1;">Canva</div>
+                    </div>
+                </div>
+                </div></div>
 
+                
+                <script>
+                    function showTooltip(event, text) {
+                        const tooltip = event.target.nextElementSibling;
+                        tooltip.textContent = text;
+                        tooltip.style.display = 'block';
+                    }
 
-    <div class="about-img-container" style="display: flex;">
-        <div class="abt-text-column" style="flex: 1.5;">
-            <h1>what i can do</h1>
-            <h3>As a third-year BS Computer Science student specializing in Intelligent Systems at De La Salle University - Dasmarinas, I possess a diverse skillset encompassing branding, illustration, UI/UX design, prototyping, and coding. I have led the frontend development for my thesis projects, Talk2DHand and DocuMed, providing valuable experience in translating design concepts into functional interfaces.<br><br>My experience as a graphic designer, gained through organizational involvement and internships, has sharpened my branding and illustration skills, further refining my attention to detail. I have led numerous projects as a UI/UX lead for competitions and courseworks, making me adept at collaborating effectively within cross-functional teams and possess a strong understanding of user-centered design principles.</h3>
-            
-            <div class="slider" style="
-            --width: 50px;
-            --height: 50px;
-            --quantity: 18;">
-            <div class="list">
-                <div class="item" style="--position: 1"><img src="assets/skill-1.png" alt=""></div>
-                <div class="item" style="--position: 2"><img src="assets/skill-2.png" alt=""></div>
-                <div class="item" style="--position: 3"><img src="assets/skill-3.png" alt=""></div>
-                <div class="item" style="--position: 4"><img src="assets/skill-4.png" alt=""></div>
-                <div class="item" style="--position: 5"><img src="assets/skill-5.png" alt=""></div>
-                <div class="item" style="--position: 6"><img src="assets/skill-6.png" alt=""></div>
-                <div class="item" style="--position: 7"><img src="assets/skill-7.png" alt=""></div>
-                <div class="item" style="--position: 8"><img src="assets/skill-8.png" alt=""></div>
-                <div class="item" style="--position: 9"><img src="assets/skill-9.png" alt=""></div>
-                <div class="item" style="--position: 10"><img src="assets/skill-10.png" alt=""></div>
-                <div class="item" style="--position: 11"><img src="assets/skill-11.png" alt=""></div>
-                <div class="item" style="--position: 12"><img src="assets/skill-12.png" alt=""></div>
-                <div class="item" style="--position: 13"><img src="assets/skill-13.png" alt=""></div>
-                <div class="item" style="--position: 14"><img src="assets/skill-14.png" alt=""></div>
-                <div class="item" style="--position: 15"><img src="assets/skill-15.png" alt=""></div>
-                <div class="item" style="--position: 16"><img src="assets/skill-16.png" alt=""></div>
-                <div class="item" style="--position: 17"><img src="assets/skill-17.png" alt=""></div>
-                <div class="item" style="--position: 18"><img src="assets/skill-18.png" alt=""></div>
-                <!-- <div class="item" style="--position: 19"><img src="assets/skill-5.png" alt=""></div>
-                <div class="item" style="--position: 20"><img src="assets/skill-6.png" alt=""></div> -->
+                    function hideTooltip() {
+                        const tooltips = document.querySelectorAll('.tooltip');
+                        tooltips.forEach(tooltip => tooltip.style.display = 'none');
+                    }
+                </script></div>
+            </div>
             </div>
         </div>
-
-        </div>
-        <div class="abt-image-column" style="flex: 1; position: relative; animation: float 7s ease-in-out infinite;">
-            <img src="/assets/1.png" class="object" data-value="-2" alt="" style="position: absolute; top: 0; left: 0;">
-            <img src="/assets/2.png" class="object" data-value="6" alt="" style="position: absolute; top: 0; left: 0;">
-            <img src="/assets/3.png" class="object" data-value="-4" alt="" style="position: absolute; top: 0; left: 0;">
-            <img src="/assets/4.png" class="object" data-value="6" alt="" style="position: absolute; top: 0; left: 0;">
-            <img src="/assets/5.png" class="object" data-value="-1" alt="" style="position: absolute; top: 0; left: 0;">
-        </div>
-    </div>
-
-    <script type="text/javascript">
-        document.addEventListener("mousemove", parallax);
-        function parallax(e){
-          document.querySelectorAll(".object").forEach(function(move){
-    
-            var moving_value = move.getAttribute("data-value");
-            var x = (e.clientX * moving_value) / 250;
-            var y = (e.clientY * moving_value) / 250;
-    
-            move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-          });
-        }
-        </script>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h1>my projects</h1>
-        <div class="projects-container">
-            
-            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-1.png) center left;">
-                <h2>Talk2DHand</h2>
-                <div class="tags">
-                    <label class="topic-lb">Machine Learning</label>
-                    <label class="topic-lb">NLP</label>
-                    <label class="fw-lb">Flask</label>
-                    <label class="fw-lb">MediaPipe</label>
-                    <label class="fw-lb">OpenCV</label>
-                    <label class="lang-lb">Python</label>
-                    <label class="lang-lb">HTML/CSS/JS</label>
-                    <label class="sw-lb">Figma</label>
-                </div>
-                <p class="description">A collaborative output for our courses entitled <b>Machine Learning</b> and <b>Natural Language Processing</b> which aims to make ASL education more accessible and inclusive. The application is split into Learning, Practice, and Self-Test, taking audio and video as its input.</p>
-
-                <div class="buttons">
-                    <button class="button-project" onclick="window.open('https://youtu.be/0OJ_0YzrcNI?si=fHFDL5PjY2NzEJlG', '_blank')">→ Live Demo</button>
-                    <!-- <button class="button-project" onclick="window.open('LINK', '_blank')">GitHub</button> -->
-                </div>
-            </div>
-
-            <div class="project-card"style="background: url(/assets/project-blur.png) top center, url(assets/project-2.png) center left;">
-                <h2>DocuMed</h2>
-                <div class="tags">
-                    <label class="topic-lb">Software Engineering</label>
-                    <label class="fw-lb">TailwindCSS</label>
-                    <label class="lang-lb">mySQL</label>
-                    <label class="lang-lb">Python</label>
-                    <label class="lang-lb">HTML/CSS/JS</label>
-                    <label class="sw-lb">Figma</label>
-                </div>
-                <p class="description">A collaborative output for our courses entitled <b>Software Engineering</b> and <b>Algorithms and Complexity</b>. DocuMed is a clinic management system catered towards De La Salle University - Dasmarinas' East and West Clinic. Its features include an inventory management, appointment scheduling, and record keeping.</p>
-
-                <div class="buttons">
-                    <button class="button-project" onclick="window.open('', '_blank')">→ Live Demo [COMING SOON]</button>
-                    <!-- <button class="button-project" onclick="window.open('LINK', '_blank')">GitHub</button> -->
-                </div>
-            </div>
-
-            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-3.png) center left;">
-                <h2>Cafeium</h2>
-                <div class="tags">
-                    <label class="topic-lb">UI/UX</label>
-                    <label class="sw-lb">Figma</label>
-                </div>
-                <p class="description">An entry to <b><i>De La Salle University - Dasmarinas' FRESH START 2024 Competition</i></b> organized by the <b><i>University Student Government</i></b>, which won <b>First Place</b>. Cafeium is a gamified habit-building tracker wherein users can maintain their cafe through accomplishing tasks on their to-do lists, adding onto their daily journal entry, or by interacting with their peers.</p>
-
-                <div class="buttons">
-                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/cFohmehWMpa19tsLeWiWoy/Cafeium?page-id=0%3A1&node-id=31-8100&starting-point-node-id=31%3A9989&t=e9i0n92S6wQbcueC-1', '_blank')">→ Live Demo</button>
-                </div>
-            </div>
-
-            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-5.png) center left;">
-                <h2>AgriKado</h2>
-                <div class="tags">
-                    <label class="topic-lb">UI/UX</label>
-                    <label class="sw-lb">Figma</label>
-                </div>
-                <p class="description">An entry to <b><i>Old St. Labs' C(old) (St)art Hackathon 2024</i></b> which won <b>Third Place</b> out of 12 teams. Agrikado is an e-commerce application that aims to promote local products while at the same time addressing climate change, particularly with how a tree is planted through each purchase made on the platform.</p>
-
-                <div class="buttons">
-                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/cectYUzDPoaW5ZzJyRioa4/COLD-START?page-id=29%3A2&node-id=59-7190&p=f&viewport=488%2C160%2C0.16&t=76fK1nVx4yBTBnGw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=99%3A1476&show-proto-sidebar=1', '_blank')">→ Live Demo</button>
-                </div>
-            </div>
-
-            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-4.png) center left;">
-                <h2>Move In Colour</h2>
-                <div class="tags">
-                    <label class="topic-lb">UI/UX</label>
-                    <label class="sw-lb">Figma</label>
-                    <label class="sw-lb">Wix</label>
-                </div>
-                <p class="description">A collaborative output for <b><i>KadaKareer's UI/UX Challenge</i></b>, which won <b>Kollab's Choice</b>. The task was to create a website for Move In Colour, a non-profit organization that aims to raise awareness and take action to create a world where everyone can move, play and dream without boundaries.</p>
-
-                <div class="buttons">
-                    <button class="button-project" onclick="window.open('https://kazzvirtudez.wixstudio.com/moveincolour', '_blank')">→ Live Demo</button>
-                </div>
-            </div>
-
-
-            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-6.png) center left;">
-                <h2>MedGrocer</h2>
-                <div class="tags">
-                    <label class="topic-lb">UI/UX</label>
-                    <label class="sw-lb">Figma</label>
-                </div>
-                <p class="description">A collaborative output for <b><i>KadaKareer's UI/UX Challenge</i></b>. The task was to redesign MedGrocer's website, which is an online pharmateutical company who also has other services such as clinic management services, and patient support programs.</p>
-
-                <div class="buttons">
-                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/CwXf2g2hTQbX8CL4OybSxa/MEDGROCER-web-design-(Copy)?page-id=53%3A59&node-id=582-952&p=f&viewport=333%2C8%2C0.12&t=geeFStdet1MtJ5Qu-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=582%3A952', '_blank')">→ Live Demo</button>
-                </div>
-            </div>
-
-            <div class="project-card"  style="background: url(/assets/project-blur.png) top center, url(assets/project-7.png) center left;">
-                <h2>SkyLink Airlines</h2>
-                <div class="tags">
-                    <label class="topic-lb">UI/UX</label>
-                    <label class="sw-lb">Figma</label>
-                </div>
-                <p class="description">An individual output for my coursework in <b>Human Computer Interaction</b>. </p>
-
-                <div class="buttons">
-                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/kdSyVKVoSEajJ7joHSFB9S/%5BS-ITCS215LA%5D-Summative-Exam?page-id=0%3A1&node-id=3-50&viewport=-14%2C809%2C0.44&t=k1ndft78leWfbtQX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A50', '_blank')">→ Live Demo</button>
-                </div>
-            </div>
-
-            <div class="project-card"  style="background: url(/assets/project-blur.png) top center, url(assets/project-8.png) center left;">
-                <h2>Reddit Redesign</h2>
-                <div class="tags">
-                    <label class="topic-lb">UI/UX</label>
-                    <label class="sw-lb">Figma</label>
-                </div>
-                <p class="description">A collaborative output for our coursework in <b>Human Computer Interaction</b>. </p>
-
-                <div class="buttons">
-                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/eMqQNr1IYgrbEk3tL3BoSS/Reddit?page-id=0%3A1&node-id=1-3&viewport=-161%2C495%2C0.34&t=tvrXDVOUxEDgQy2L-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3', '_blank')">→ Live Demo</button>
-                </div>
-            </div>
-
-        </div>
-        <br><br>
     </section>
 
-    <!-- <script src="script.js"></script> -->
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabContentContainers = document.querySelectorAll('.tab-content-container');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Remove active state from all tabs
+                tabs.forEach(t => {
+                    t.classList.remove('text-blue-600', 'border-blue-600', 'dark:text-blue-500', 'dark:border-blue-500');
+                    t.querySelector('img').classList.add('filter', 'grayscale', 'contrast-0', 'brightness-0');
+                });
+
+                // Add active state to clicked tab
+                tab.classList.add('text-blue-600', 'border-blue-600', 'dark:text-blue-500', 'dark:border-blue-500');
+                tab.querySelector('img').classList.remove('filter', 'grayscale', 'contrast-0', 'brightness-0');
+
+                // Show relevant content
+                const selectedTab = tab.getAttribute('data-content');
+                tabContentContainers.forEach(container => {
+                    if (container.getAttribute('data-tab') === selectedTab) {
+                        container.classList.remove('hidden');
+                    } else {
+                        container.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Set default active tab
+        tabs[0].click();
+    </script>
+
+    <section id="projects">
+        <h1>my projects</h1>
+        <div class="best-works" style="margin-top: 2vh; padding-left: 8vh; padding-right: 8vh; row-gap: 10vh; padding-bottom: 16vh;">
+            
+            <div class="project-overview">
+                <div class="project-image" style="flex: 0 0 30%; height: auto; overflow: hidden; border-radius: 8px;">
+                    <img src="/assets/cover-talk2dhand.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-description" style="flex: 0 0 70%; padding-right: 4vh;">
+                    <h2>Talk2DHand</h2>
+                    <div class="tags">
+                        <label class="topic-lb">Machine Learning</label>
+                        <label class="topic-lb">NLP</label>
+                        <label class="fw-lb">Flask</label>
+                        <label class="fw-lb">MediaPipe</label>
+                        <label class="fw-lb">OpenCV</label>
+                        <label class="lang-lb">Python</label>
+                        <label class="lang-lb">HTML/CSS/JS</label>
+                        <label class="sw-lb">Figma</label>
+                    </div>
+                    <p class="description">An undergraduate thesis project which aims to make sign language education more accessible and inclusive. The current MVP is split into Learning, Practice, and Self-Test, taking audio and video as its input. Enhancements are in progress, consisting of widening the language scope and adjusting it to a gamified LMS platform.</p>
+                    
+                    <div class="btn-container" style="padding-top: 2vh;">
+                        <button class="btn-line" onclick="window.open('https://talk2dhand-1.onrender.com/', '_blank')">
+                            <span style="display: flex; align-items: center; padding-right: 8vh;">
+                                <img src="/assets/link.png" alt="Icon" class="icon" style="max-width: 20px; vertical-align: middle; margin-right: 7.5px; margin-bottom: auto;"> Live Demo
+                            </span>
+                        </button>
+                        <button class="btn-line" onclick="window.open('https://github.com/neinzaut/talk2dhand', '_blank')">
+                            <span style="display: flex; align-items: center;">
+                                <img src="/assets/github.png" alt="Icon" class="icon" style="max-width: 20px; vertical-align: middle; margin-right: 7.5px; margin-bottom: auto;"> Code Preview
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-overview" style="margin-top: 2vh">
+                <div class="project-image" style="flex: 0 0 30%; height: auto; overflow: hidden; border-radius: 8px;">
+                    <img src="/assets/cover-kapwakonek.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-description" style="flex: 0 0 70%; padding-right: 4vh;">
+                    <h2>KapwaKonek</h2>
+                    <div class="tags">
+                        <label class="topic-lb">Software Engineering</label>
+                        <label class="topic-lb">Machine Learning</label>
+                        <label class="fw-lb">Twilio</label>
+                        <label class="fw-lb">Flask</label>
+                        <label class="lang-lb">React Native</label>
+                        <label class="sw-lb">Figma</label>
+                    </div>
+                    <p class="description">A winning entry to Ateneo De Manila's <b>Blue Hacks 2025 Hackathon</b> aligned with the theme <i>"Natural Disaster Resilience, Response, and Coordination: Reducing Risks, Enhancing Preparedness"</i>. KapwaKonek is a centralized disaster risk management platform catered for local government units.</p>
+                
+                    <div class="btn-container" style="padding-top: 2vh;">
+                        <button class="btn-line" onclick="window.open('https://www.figma.com/design/1KmaBhmUHJsR6VPoZSSjzO/BLUE-HACKS?node-id=40-209&t=ij6VqJ4oqWZagmpy-1', '_blank')">
+                            <span style="display: flex; align-items: center; padding-right: 8vh;">
+                                <img src="/assets/link.png" alt="Icon" class="icon" style="max-width: 20px; vertical-align: middle; margin-right: 7.5px; margin-bottom: auto;"> Live Demo
+                            </span>
+                        </button>
+                        <button class="btn-line" onclick="window.open('https://github.com/compsat/bh25-MgaAnakNiRizal', '_blank')">
+                            <span style="display: flex; align-items: center;">
+                                <img src="/assets/github.png" alt="Icon" class="icon" style="max-width: 20px; vertical-align: middle; margin-right: 7.5px; margin-bottom: auto;"> Code Preview
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-overview" style="margin-top: 2vh">
+                <div class="project-image" style="flex: 0 0 30%; height: auto; overflow: hidden; border-radius: 8px;">
+                    <img src="/assets/cover-cafeium.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-description" style="flex: 0 0 70%; padding-right: 4vh;">
+                    <h2>Cafeium</h2>
+                    <div class="tags">
+                        <label class="topic-lb">UI/UX</label>
+                        <label class="sw-lb">Figma</label>
+                    </div>
+                    <p class="description">A winning entry to De La Salle University - Dasmarinas' <b>Fresh Start 2024 Hackathon</b>, aligned with the theme <i>"Software Championing Students’ Wellbeing"</i>. Cafeium is a gamified habit-building tracker wherein users can maintain their cafe through various features.</p>
+                    
+                    <div class="btn-container" style="padding-top: 2vh;">
+                        <button class="btn-line" onclick="window.open('https://www.figma.com/proto/cFohmehWMpa19tsLeWiWoy/Cafeium?page-id=0%3A1&node-id=31-8100&starting-point-node-id=31%3A9989&t=e9i0n92S6wQbcueC-1', '_blank')">
+                            <span style="display: flex; align-items: center; padding-right: 8vh;">
+                                <img src="/assets/link.png" alt="Icon" class="icon" style="max-width: 20px; vertical-align: middle; margin-right: 7.5px; margin-bottom: auto;"> Live Demo
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-overview" style="margin-top: 2vh">
+                <div class="project-image" style="flex: 0 0 30%; height: auto; overflow: hidden; border-radius: 8px;">
+                    <img src="/assets/cover-agrikado.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-description" style="flex: 0 0 70%; padding-right: 4vh;">
+                    <h2>AgriKado</h2>
+                    <div class="tags">
+                        <label class="topic-lb">UI/UX</label>
+                        <label class="sw-lb">Figma</label>
+                    </div>
+                    <p class="description">A winning entry to Old St. Labs' <b>C(old) (St)art Hackathon 2024</b>. Agrikado is an e-commerce application that aims to promote local products while addressing climate change, through the feature in which a tree is planted through each purchase made on the platform.</p>
+                    
+                    <div class="btn-container" style="padding-top: 2vh;">
+                        <button class="btn-line" onclick="window.open('https://www.figma.com/proto/cectYUzDPoaW5ZzJyRioa4/COLD-START?page-id=29%3A2&node-id=59-7190&p=f&viewport=488%2C160%2C0.16&t=76fK1nVx4yBTBnGw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=99%3A1476&show-proto-sidebar=1', '_blank')">
+                            <span style="display: flex; align-items: center; padding-right: 8vh;">
+                                <img src="/assets/link.png" alt="Icon" class="icon" style="max-width: 20px; vertical-align: middle; margin-right: 7.5px; margin-bottom: auto;"> Live Demo
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-overview" style="margin-top: 2vh">
+                <div class="project-image" style="flex: 0 0 30%; height: auto; overflow: hidden; border-radius: 8px;">
+                    <img src="/assets/cover-documed.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-description" style="flex: 0 0 70%; padding-right: 4vh;">
+                    <h2>DocuMed</h2>
+                    <div class="tags">
+                        <label class="topic-lb">Software Engineering</label>
+                        <label class="fw-lb">TailwindCSS</label>
+                        <label class="lang-lb">mySQL</label>
+                        <label class="lang-lb">Python</label>
+                        <label class="lang-lb">HTML/CSS/JS</label>
+                        <label class="sw-lb">Figma</label>
+                    </div>
+                    <p class="description">A collaborative output for our courses entitled <b>Software Engineering</b> and <b>Algorithms and Complexity</b>. DocuMed is a clinic management system catered towards De La Salle University - Dasmarinas' East and West Clinic. Its features include an inventory management, appointment scheduling, and record keeping.</p>    
+                    
+                    <div class="btn-container" style="padding-top: 2vh;">
+                        <!-- <button class="btn-line" onclick="window.open('https://talk2dhand-1.onrender.com/', '_blank')">
+                            <span style="display: flex; align-items: center; padding-right: 8vh;">
+                                <img src="/assets/link.png" alt="Icon" class="icon" style="max-width: 20px; vertical-align: middle; margin-right: 7.5px; margin-bottom: auto;"> Live Demo
+                            </span>
+                        </button> -->
+                        <button class="btn-line" onclick="window.open('https://github.com/neinzaut/documed-updated', '_blank')">
+                            <span style="display: flex; align-items: center;">
+                                <img src="/assets/github.png" alt="Icon" class="icon" style="max-width: 20px; vertical-align: middle; margin-right: 7.5px; margin-bottom: auto;"> Code Preview
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div style="text-align: center; margin-top: 8px;">
+                <button class="btn-primary" onclick="window.location.href='/projects.html'">See More Projects</button>
+            </div> -->
+
+        </div>
+    </section>
+
+
+        <br><br><br>
+        
+    </section>
 
     <script>
     const hamburger = document.querySelector('.hamburger');
