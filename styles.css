@@ -502,14 +502,19 @@ body {
     }
     #about h3 {
         font-size: 18px !important; 
-        padding-left: 1.5vh;
-        padding-right: 1.5vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
     }
     #about p {
         font-size: 18px;
     }
     .slider {
         margin-top: 4vh;
+    }
+
+    .tech-container{
+        padding-left: 1vh;
+        padding-right: 2vh;
     }
 
     #tab-content{
@@ -556,7 +561,12 @@ body {
         padding-left: 0;
     }
     #projects p {
-        font-size: 18px !important;
+        font-size: 16px !important;
+    }
+
+    #projects .best-works {
+        padding-left: 2vh !important;
+        padding-right: 2vh !important;
     }
 
 
@@ -616,10 +626,10 @@ body {
         font-size: 48px;
     }
     #home h3 {
-        font-size: 28px;
+        font-size: 32px;
     }
     #home p {
-        font-size: 18px;
+        font-size: 24x;
     }
     #home img {
         margin-top: 5vh;
