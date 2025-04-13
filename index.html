@@ -59,21 +59,22 @@
             <div class="dark:border-gray-700">
             <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400 justify-center">
             <li class="me-2">
-            <a href="#" class="tab inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" data-content="frontend">
+            <a href="#" class="tab text-xs inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" 
+            data-content="frontend">
                 <img src="/assets/tag-frontend.png" class="w-4 h-4 me-2 grayscale contrast-0 brightness-0 group-hover:filter-none mr-2" aria-hidden="true">
-                frontend
+                Frontend
             </a>
             </li>
             <li class="me-2">
-            <a href="#" class="tab inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" data-content="backend">
+            <a href="#" class="tab text-xs inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" data-content="backend">
                 <img src="/assets/tag-backend.png" class="w-4 h-4 me-2 filter grayscale contrast-0 brightness-0 group-hover:filter-none mr-2" aria-hidden="true">
-                backend
+                Backend
             </a>
             </li>
             <li class="me-2">
-            <a href="#" class="tab inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" data-content="others">
+            <a href="#" class="tab text-xs inline-flex items-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group" data-content="others">
                 <img src="/assets/tag-others.png" class="w-4 h-4 me-2 filter grayscale contrast-0 brightness-0 group-hover:filter-none mr-2" aria-hidden="true">
-                others
+                Others
             </a>
             </li>
             </ul>
@@ -377,6 +378,18 @@
         <br><br><br>
         
     </section>
+
+    <script>
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 80) { // Adjust the scroll threshold as needed
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+    </script>
 
     <script>
     const hamburger = document.querySelector('.hamburger');
