@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="styles.css">
+        <title>ches tuazon | portfolio</title>
+        <link rel="icon" href="/assets/portrait-resized.png" type="image/png">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jacquard+24&family=Jacquarda+Bastarda+9&family=Jersey+10&family=Micro+5&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">    </head>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <img src="/assets/small-logo.png" alt="Site Icon" class="nav-logo">
+    <div class="nav-links-container">
+        <a href="/index.html#home" class="nav-links">Home</a>
+        <a href="/index.html#about" class="nav-links">About</a>
+        <a href="/index.html#projects" class="nav-links">Projects</a>
+        <a href="https://github.com/neinzaut" class="nav-links">GitHub</a>
+    </div>
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<body>
+    
+
+<!-- drawer init and toggle -->
+<div class="text-center">
+    <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
+    Show right drawer
+    </button>
+ </div>
+  
+</body>
+
+</html>
+
+    <!-- PROJECTS SECTION -->
+    <!-- <section id="projects">
+        <h1>my projects</h1>
+        <div class="projects-container">
+            
+            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-1.png) center left;">
+                <h2><a href="/projects/1-talk2dhand.html" class="title-project">Talk2DHand</a></h2>
+                <div class="tags">
+                    <label class="topic-lb">Machine Learning</label>
+                    <label class="topic-lb">NLP</label>
+                    <label class="fw-lb">Flask</label>
+                    <label class="fw-lb">MediaPipe</label>
+                    <label class="fw-lb">OpenCV</label>
+                    <label class="lang-lb">Python</label>
+                    <label class="lang-lb">HTML/CSS/JS</label>
+                    <label class="sw-lb">Figma</label>
+                </div>
+                <p class="description">A collaborative output for our courses entitled <b>Machine Learning</b> and <b>Natural Language Processing</b> which aims to make ASL education more accessible and inclusive. The application is split into Learning, Practice, and Self-Test, taking audio and video as its input.</p>
+
+                <div class="buttons">
+                    <button class="button-project" onclick="window.open('https://youtu.be/0OJ_0YzrcNI?si=fHFDL5PjY2NzEJlG', '_blank')">→ Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project-card"style="background: url(/assets/project-blur.png) top center, url(assets/project-2.png) center left;">
+                <h2>DocuMed</h2>
+                <div class="tags">
+                    <label class="topic-lb">Software Engineering</label>
+                    <label class="fw-lb">TailwindCSS</label>
+                    <label class="lang-lb">mySQL</label>
+                    <label class="lang-lb">Python</label>
+                    <label class="lang-lb">HTML/CSS/JS</label>
+                    <label class="sw-lb">Figma</label>
+                </div>
+                <p class="description">A collaborative output for our courses entitled <b>Software Engineering</b> and <b>Algorithms and Complexity</b>. DocuMed is a clinic management system catered towards De La Salle University - Dasmarinas' East and West Clinic. Its features include an inventory management, appointment scheduling, and record keeping.</p>
+
+                <div class="buttons">
+                    <button class="button-project" onclick="window.open('', '_blank')">→ Live Demo [COMING SOON]</button>
+                </div>
+            </div>
+
+            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-3.png) center left;">
+                <h2>Cafeium</h2>
+                <div class="tags">
+                    <label class="topic-lb">UI/UX</label>
+                    <label class="sw-lb">Figma</label>
+                </div>
+                <p class="description">An entry to <b><i>De La Salle University - Dasmarinas' FRESH START 2024 Competition</i></b> organized by the <b><i>University Student Government</i></b>, which won <b>First Place</b>. Cafeium is a gamified habit-building tracker wherein users can maintain their cafe through accomplishing tasks on their to-do lists, adding onto their daily journal entry, or by interacting with their peers.</p>
+
+                <div class="buttons">
+                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/cFohmehWMpa19tsLeWiWoy/Cafeium?page-id=0%3A1&node-id=31-8100&starting-point-node-id=31%3A9989&t=e9i0n92S6wQbcueC-1', '_blank')">→ Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-5.png) center left;">
+                <h2>AgriKado</h2>
+                <div class="tags">
+                    <label class="topic-lb">UI/UX</label>
+                    <label class="sw-lb">Figma</label>
+                </div>
+                <p class="description">An entry to <b><i>Old St. Labs' C(old) (St)art Hackathon 2024</i></b> which won <b>Third Place</b> out of 12 teams. Agrikado is an e-commerce application that aims to promote local products while at the same time addressing climate change, particularly with how a tree is planted through each purchase made on the platform.</p>
+
+                <div class="buttons">
+                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/cectYUzDPoaW5ZzJyRioa4/COLD-START?page-id=29%3A2&node-id=59-7190&p=f&viewport=488%2C160%2C0.16&t=76fK1nVx4yBTBnGw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=99%3A1476&show-proto-sidebar=1', '_blank')">→ Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-4.png) center left;">
+                <h2>Move In Colour</h2>
+                <div class="tags">
+                    <label class="topic-lb">UI/UX</label>
+                    <label class="sw-lb">Figma</label>
+                    <label class="sw-lb">Wix</label>
+                </div>
+                <p class="description">A collaborative output for <b><i>KadaKareer's UI/UX Challenge</i></b>, which won <b>Kollab's Choice</b>. The task was to create a website for Move In Colour, a non-profit organization that aims to raise awareness and take action to create a world where everyone can move, play and dream without boundaries.</p>
+
+                <div class="buttons">
+                    <button class="button-project" onclick="window.open('https://kazzvirtudez.wixstudio.com/moveincolour', '_blank')">→ Live Demo</button>
+                </div>
+            </div>
+
+
+            <div class="project-card" style="background: url(/assets/project-blur.png) top center, url(assets/project-6.png) center left;">
+                <h2>MedGrocer</h2>
+                <div class="tags">
+                    <label class="topic-lb">UI/UX</label>
+                    <label class="sw-lb">Figma</label>
+                </div>
+                <p class="description">A collaborative output for <b><i>KadaKareer's UI/UX Challenge</i></b>. The task was to redesign MedGrocer's website, which is an online pharmateutical company who also has other services such as clinic management services, and patient support programs.</p>
+
+                <div class="buttons">
+                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/CwXf2g2hTQbX8CL4OybSxa/MEDGROCER-web-design-(Copy)?page-id=53%3A59&node-id=582-952&p=f&viewport=333%2C8%2C0.12&t=geeFStdet1MtJ5Qu-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=582%3A952', '_blank')">→ Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project-card"  style="background: url(/assets/project-blur.png) top center, url(assets/project-7.png) center left;">
+                <h2>SkyLink Airlines</h2>
+                <div class="tags">
+                    <label class="topic-lb">UI/UX</label>
+                    <label class="sw-lb">Figma</label>
+                </div>
+                <p class="description">An individual output for my coursework in <b>Human Computer Interaction</b>. </p>
+
+                <div class="buttons">
+                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/kdSyVKVoSEajJ7joHSFB9S/%5BS-ITCS215LA%5D-Summative-Exam?page-id=0%3A1&node-id=3-50&viewport=-14%2C809%2C0.44&t=k1ndft78leWfbtQX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A50', '_blank')">→ Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project-card"  style="background: url(/assets/project-blur.png) top center, url(assets/project-8.png) center left;">
+                <h2>Reddit Redesign</h2>
+                <div class="tags">
+                    <label class="topic-lb">UI/UX</label>
+                    <label class="sw-lb">Figma</label>
+                </div>
+                <p class="description">A collaborative output for our coursework in <b>Human Computer Interaction</b>. </p>
+
+                <div class="buttons">
+                    <button class="button-project" onclick="window.open('https://www.figma.com/proto/eMqQNr1IYgrbEk3tL3BoSS/Reddit?page-id=0%3A1&node-id=1-3&viewport=-161%2C495%2C0.34&t=tvrXDVOUxEDgQy2L-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3', '_blank')">→ Live Demo</button>
+                </div>
+            </div>
+
+        </div> -->
